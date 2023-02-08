@@ -26,9 +26,9 @@ const Home = () => {
                     <hr className="border-sky-800 border-b-1 rounded-3xl bg-clip-border"/>
                     <article className="bg-yellow-100/30 my-2">{post.data().post}</article>
                     <hr className="border-sky-800 border-b-1 rounded-3xl bg-clip-border"/>
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between w-[400px] h-20">
                         <span>@ {post.data().author}</span>
-                        <span>{post._document.createTime.toTimestamp().toDate().getDate()}-{post._document.createTime.toTimestamp().toDate().getMonth()+1}-{post._document.createTime.toTimestamp().toDate().getFullYear()}</span>
+                        <span>{post._document.createTime.toTimestamp().toDate().getDate()}-{post._document.createTime.toTimestamp().toDate().getMonth()+1}-{post._document.createTime.toTimestamp().toDate().getFullYear()} {post._document.createTime.toTimestamp().toDate().getHours()}:{post._document.createTime.toTimestamp().toDate().getMinutes()}</span>
                     </div>
                 </div>
             ))}

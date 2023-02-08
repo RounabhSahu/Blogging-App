@@ -58,7 +58,7 @@ const Post = () => {
     return (
         <div className="bg-amber-200 w-fit mx-auto my-20 p-6 rounded border-slate-500 border-x-2 text-center">
             <h3 className="text-3xl py-2">Create Post</h3>
-            <hr className="border-sky-800 border-b-1 rounded-3xl bg-clip-border"/>
+                <hr className="border-sky-800 border-b-1 rounded-3xl bg-clip-border"/>
             <div className="flex flex-col">
                 <label className="text-xl text-left">Title</label>
                 <input required="required" value={title} onChange={(e)=>{setTitle(e.target.value)}} placeholder="Heading for your story ..." type="text" className="mt-1 text-lg align-middle py-1 pl-2 font-light rounded focus:bg-sky-100/80 focus:border-none focus:rounded-sm"/>

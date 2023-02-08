@@ -21,7 +21,7 @@ const Logout = (props) => {
             localStorage.clear();
             props.setIsLoggedIn(false);
             navigate('/login');
-            alert("signed out successful");
+            
         }).catch((e)=>{
             alert(e.message)
         })
